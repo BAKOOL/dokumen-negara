@@ -9,14 +9,14 @@
     @endif
 <body>
 <div class="row">
-    @foreach($product as $product)
+    @foreach($product as $prod)
         <div class="col-sm-4">
             <div class="card" style="width: 300px">
-                <img src="{{asset($product->image)}}" alt="" class="image" style="width: 100%">
+                <img src="{{asset($prod->image)}}" alt="" class="image" style="width: 100%">
                 <div class="card-body">
-                    <h4 class="card-title">{{$product->name}}</h4>
-                    <p class="card-text">{{$product->description}}</p>
-                    <a href="{{route('', $product->id)}}}" class="btn btn-primary">See Product</a>
+                    <h4 class="card-title">{{$prod->name}}</h4>
+                    <p class="card-text">{{$prod->description}}</p>
+{{--                    <a href="{{route('', $prod->id)}}}" class="btn btn-primary">See Product</a>--}}
                 </div>
             </div>
         </div>
