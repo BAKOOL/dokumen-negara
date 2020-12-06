@@ -35,7 +35,15 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
 
+
                     </ul>
+                    <div class="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search for stationary" id="usr">
+                        </div>
+                    </div>
+
+                    <button type="button" class="btn btn-primary">Search</button>
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
@@ -67,6 +75,11 @@
                                     </form>
                                 </div>
                             </li>
+                            <div class="cart">
+                                <button type="button" class="btn btn-primary">Cart</button>
+                                <button type="button" class="btn btn-primary">History</button>
+                            </div>
+
                         @endguest
                     </ul>
                 </div>

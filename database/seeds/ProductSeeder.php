@@ -20,7 +20,7 @@ class ProductSeeder extends Seeder
                 'stationary_type'=>'notebook',
                 'stock'=>'2050',
                 'description'=>'Ruled Notebook Diary Agenda Buku Catatan Bergaris Joyko NB-663',
-                'image'=>''
+                'image'=>'images/product/notebook1.jpg'
 
 
             ],
@@ -30,7 +30,7 @@ class ProductSeeder extends Seeder
                 'stationary_type'=>'notebook',
                 'stock'=>'12585',
                 'description'=>'Deli Notebook B5 96 Lembar dengan pinggiran plastik T1696',
-                'image'=>''
+                'image'=>'images/product/deli.jpg'
             ],
             [
                 'name'=>'Deli Loose-Leaf Notebook',
@@ -38,7 +38,7 @@ class ProductSeeder extends Seeder
                 'stationary_type'=>'notebook',
                 'stock'=>'2660',
                 'description'=>'Deli Loose-Leaf Buku Notebook spiral B5 60 lembar LB560',
-                'image'=>''
+                'image'=>'images/product/deli_loose.jpg'
             ],
             [
                 'name'=>'EP2 Empa Notebook Journal',
@@ -46,7 +46,7 @@ class ProductSeeder extends Seeder
                 'stationary_type'=>'notebook',
                 'stock'=>'157',
                 'description'=>'Cover notebook ini terbuat dari faux leather, walaupun cover terlihat lembut dan halus, namun sedikit bertekstur sehingga sangat nyaman dan tidak licin untuk di genggam.',
-                'image'=>''
+                'image'=>'images/product/ep_empa.jpg'
             ],
             [
                 'name'=>'BUKU TULIS NOTEBOOK A5',
@@ -54,7 +54,7 @@ class ProductSeeder extends Seeder
                 'stationary_type'=>'notebook',
                 'stock'=>'3617',
                 'description'=>'BUKU DIARY BUKU TULIS NOTEBOOK A5 NOTEBOOK BUKU A5 LUCU BUKU CATATAN',
-                'image'=>''
+                'image'=>'images/product/bukudiarynotebook.jpg'
             ],
             [
                 'name'=>'Xiaomi Mi Pen Pulpen',
@@ -62,7 +62,7 @@ class ProductSeeder extends Seeder
                 'stationary_type'=>'pen',
                 'stock'=>'834',
                 'description'=>'Xiaomi Mi Pen Pulpen / Bolpen / Ballpoint Premium (Original)',
-                'image'=>''
+                'image'=>'images/product/xiaomipen.jpg'
             ],
             [
                 'name'=>'Stylus Pen Universal Ori',
@@ -70,7 +70,7 @@ class ProductSeeder extends Seeder
                 'stationary_type'=>'pen',
                 'stock'=>'327',
                 'description'=>'Stylus Pen Universal Ori Apple Ipad Android Samsung Original',
-                'image'=>''
+                'image'=>'images/product/styluspen.jpg'
             ],
             [
                 'name'=>'Baseus Stylus 2in1 Pen Universal',
@@ -78,7 +78,7 @@ class ProductSeeder extends Seeder
                 'stationary_type'=>'pen',
                 'stock'=>'158',
                 'description'=>'Baseus Stylus 2in1 Pen Universal iPhone iPad Tablet IOS Android',
-                'image'=>''
+                'image'=>'images/product/baseuspen.jpg'
             ],
             [
                 'name'=>'Baseus Stylus 2in1 Pen Universal',
