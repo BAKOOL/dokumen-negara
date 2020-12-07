@@ -34,9 +34,13 @@
                     ReadandWArite
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control form-control-lg" placeholder="Search for stationary" id="usr">
+                    <form action="/product/search" method="GET">
+                        <input type="text" class="form-control form-control-lg" placeholder="Search for stationary" value="{{old('search')}}">
+                        <button type="submit" class="btn btn-primary" value="Search">Search</button>
+                    </form>
+
                 </div>
-                <button type="button" class="btn btn-primary">Search</button>
+
                 <div class="image">
                     <img src="images/notebook.png" alt="notebook" width="200" height="200">
                     <img src="images/pen.png" alt="notebook" width="200" height="200">

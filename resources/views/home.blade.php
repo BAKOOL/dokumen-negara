@@ -26,6 +26,7 @@
         <div class="notfound">
             There is no product match with the keyword.
         </div>
+    @endif
     <div class="paginate">
         {{$product->links()}}
     </div>

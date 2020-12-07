@@ -13,15 +13,16 @@ class ProductController extends Controller
         $search = $request->search;
         $product = DB::table('product')->where('name','like',"%".$search."%")->paginate(6);
 
-        return view('home', ['product' => $product])
+        return view('home', ['product' => $product]);
     }
 
     public function index(){
         $product = DB::table('product')->paginate(6);
 
-        return view('index',['product' => $product])
+        return view('index',['product' => $product]);
     }
     public function product($id){
-        $product = Product::find($id)
+        $product = Product::find($id);
+
     }
 }
