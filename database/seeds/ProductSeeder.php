@@ -44,7 +44,7 @@ class ProductSeeder extends Seeder
                 'stock'=>'157',
                 'price'=>'Rp.49900',
                 'description'=>'Cover notebook ini terbuat dari faux leather, walaupun cover terlihat lembut dan halus, namun sedikit bertekstur sehingga sangat nyaman dan tidak licin untuk di genggam.',
-                'image'=>'images/product/ep_empa.jpg'
+                'image'=>'images/product/ep_empa.png'
             ],
             [
                 'name'=>'BUKU TULIS NOTEBOOK A5',
@@ -60,7 +60,7 @@ class ProductSeeder extends Seeder
                 'stock'=>'834',
                 'price'=>'Rp.45000',
                 'description'=>'Xiaomi Mi Pen Pulpen / Bolpen / Ballpoint Premium (Original)',
-                'image'=>'images/product/xiaomipen.jpg'
+                'image'=>'images/product/xiaomipen.png'
             ],
             [
                 'name'=>'Stylus Pen Universal Ori',
@@ -84,7 +84,7 @@ class ProductSeeder extends Seeder
                 'stock'=>'158',
                 'price'=>'Rp.99000',
                 'description'=>'Baseus Stylus 2in1 Pen Universal iPhone iPad Tablet IOS Android',
-                'image'=>''
+                'image'=>'images/product/styluspen.jpg'
             ],
         ]);
 

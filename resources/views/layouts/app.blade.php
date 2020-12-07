@@ -34,15 +34,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-                        <div class="search">
-                            <div class="form-group">
-                                <form action="/product/search" method="GET" class="search_form">
-                                    <input type="text" name="search" class="form-control" placeholder="Search for stationary" id="usr">
-                                    <button type="submit" class="btn btn-primary" value="Search">Search</button>
-                                </form>
-                            </div>
-                        </div>
+
                     </ul>
+                    <div class="search">
+                        <div class="form-group">
+                            <form action="/product/search" method="GET" class="search_form">
+                                <input type="text" name="search" class="form-control" placeholder="Search for stationary" id="usr">
+                                <button type="submit" class="btn btn-primary" value="Search">Search</button>
+                            </form>
+                        </div>
+                    </div>
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">

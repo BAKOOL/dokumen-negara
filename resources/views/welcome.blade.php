@@ -35,7 +35,7 @@
                 </div>
                 <div class="form-group">
                     <form action="/product/search" method="GET">
-                        <input type="text" class="form-control form-control-lg" placeholder="Search for stationary" value="{{old('search')}}">
+                        <input type="text" name="search" class="form-control form-control-lg" placeholder="Search for stationary" id="usr">
                         <button type="submit" class="btn btn-primary" value="Search">Search</button>
                     </form>
 

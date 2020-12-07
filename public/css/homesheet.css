@@ -1,11 +1,15 @@
 .cart{
     margin-left: 10px;
 }
-.search{
-    width: 60%;
-    margin-right: 10px;
-}
-.form-control{
+.search_form{
+    display: flex;
+    vertical-align: center;
 
 }
+.search{
+    width: 60%;
+}
+
+
+
 

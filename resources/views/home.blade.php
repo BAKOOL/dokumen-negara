@@ -11,7 +11,7 @@
 <div class="row">
     @if($product->isNotEmpty())
         @foreach($product as $prod)
-            <div class="col-sm-4">  67
+            <div class="col-sm-4">
                 <div class="card" style="width: 300px">
                     <img src="{{asset($prod->image)}}" alt="" class="image" style="width: 100%">
                     <div class="card-body">
