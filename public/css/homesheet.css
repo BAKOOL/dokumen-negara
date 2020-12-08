@@ -3,12 +3,31 @@
 }
 .search_form{
     display: flex;
-    vertical-align: center;
+
 
 }
 .search{
     width: 60%;
 }
+main{
+    padding: 100px;
+}
+.form-control{
+    margin-right: 10px;
+}
+
+
+.card{
+    margin-left: 20px;
+}
+
+.paginate{
+    margin-left: 35px;
+}
+.row{
+    margin-left: 0;
+}
+
 
 
 
