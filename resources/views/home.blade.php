@@ -8,10 +8,10 @@
         </div>
     @endif
 <body>
-<div class="row">
+<div class="row justify-content-between">
     @if($product->isNotEmpty())
         @foreach($product as $prod)
-            <div class="col-sm-4 mx-auto">
+            <div class="col-sm-4">
                 <div class="card" style="width: 300px">
                     <img src="{{asset($prod->image)}}" alt="" class="image" style="width: 100%">
                     <div class="card-body">
