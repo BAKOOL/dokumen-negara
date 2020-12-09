@@ -3,7 +3,7 @@
 
 @section('content')
     <body>
-    <div class="row justify-content-between">
+    <div class="row">
         @if($product->isNotEmpty())
             @foreach($product as $prod)
                 <div class="col-sm-4">

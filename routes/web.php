@@ -20,7 +20,14 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('/home', 'HomeController@handleAdmin')->name('admin.route')->middleware('admin');
 
 Route::get('/product', 'ProductController@search');
 Route::get('/product/search', "ProductController@search");
 Route::get('/product/id', 'ProductController@product')->name('detailproduct');
+
+Route::group(['middleware'=>'Admin'], function (){
+//    Route::get('/home', 'AdminController@handleAdmin')->name('admin.route');
+});
+
+

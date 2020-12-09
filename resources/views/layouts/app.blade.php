@@ -7,18 +7,18 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'ReadandWarite') }}</title>
+    <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="/css/homesheet.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="/css/homesheet.css" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -33,9 +33,9 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
-{{--                    <ul class="navbar-nav mr-auto">--}}
+                    <ul class="navbar-nav mr-auto">
 
-{{--                    </ul>--}}
+                    </ul>
                     <div class="search">
                         <div class="form-group">
                             <form action="/product/search" method="GET" class="search_form">
@@ -60,7 +60,12 @@
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }}
+                                    @if(Auth::user()->is_admin == 1)
+                                        Admin
+                                    @else
+                                        Member
+{{--                                    {{ Auth::user()->name }}--}}
+                                    @endif
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -75,11 +80,12 @@
                                     </form>
                                 </div>
                             </li>
+                            @if(Auth::user()->is_admin == 0)
                             <div class="cart">
                                 <button type="button" class="btn btn-primary">Cart</button>
                                 <button type="button" class="btn btn-primary">History</button>
                             </div>
-
+                            @endif
                         @endguest
                     </ul>
                 </div>

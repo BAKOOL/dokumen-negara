@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\User;
 
 class DatabaseSeeder extends Seeder
 {
@@ -11,6 +12,17 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-         $this->call(ProductSeeder::class);
+        $userData = [
+            [
+                'name'=>'Admin', 'email'=>'admin@readandwarite.com', 'is_admin'=>'1', 'password'=> bcrypt('password'),
+            ],
+        ];
+
+        foreach ($userData as $key => $val) {
+            User::create($val);
+        }
+
+        $this->call(TypeSeeder::class);
+        $this->call(ProductSeeder::class);
     }
 }

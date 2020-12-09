@@ -26,6 +26,15 @@ main{
     margin-left: 35px;
 }
 
+.addNew{
+    display: flex;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.btn-space {
+    margin-right: 15px;
+}
 
 
 
