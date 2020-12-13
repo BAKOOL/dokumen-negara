@@ -13,7 +13,7 @@ class TypeSeeder extends Seeder
     public function run()
     {
         //
-        DB::table('type')->insert([
+        DB::table('stationaryType')->insert([
             ['stationaryType_Name' => 'pen'],
             ['stationaryType_Name' => 'pencil'],
             ['stationaryType_Name' => 'ruler'],

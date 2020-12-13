@@ -9,8 +9,8 @@ class StationaryType extends Model
 {
     //
     public function Product(){
-        return $this->hasMany(Product::class);
+        return $this->hasMany(Product::class, 'stationaryType_Id');
     }
-    public $table = 'type';
+    public $table = 'stationaryType';
 
 }

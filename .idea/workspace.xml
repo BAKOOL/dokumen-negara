@@ -20,30 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f4a010f-e616-4013-a5f5-e4e793e23f26" name="Default Changelist" comment="adding new file">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/Admin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/StationaryType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_01_130031_create_type_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/TypeSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/handleAdmin.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/viewstationary.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/StationaryType.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/StationaryType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_01_130031_create_type_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_01_130031_create_type_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_03_123154_create_product_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_03_123154_create_product_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/ProductSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/ProductSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/TypeSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/TypeSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/homesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/homesheet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/viewproduct.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/viewstationary.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/viewstationary.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -240,7 +229,9 @@
       <workItem from="1607397063797" duration="6570000" />
       <workItem from="1607413636115" duration="12897000" />
       <workItem from="1607493762828" duration="10901000" />
-      <workItem from="1607517883348" duration="10481000" />
+      <workItem from="1607517883348" duration="11574000" />
+      <workItem from="1607831788359" duration="15912000" />
+      <workItem from="1607866314890" duration="2501000" />
     </task>
     <task id="LOCAL-00001" summary="adding new file">
       <created>1607257640749</created>
@@ -298,7 +289,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607415195548</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="adding new file">
+      <created>1607531060691</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1607531060691</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,10 +360,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="604" y="341" key="NewPhpFileDialog/0.0.1536.834@0.0.1536.834" timestamp="1607527333386" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1607415198315">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1607531063940">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1607415198315" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1607531063940" />
     <state x="93" y="93" width="1350" height="648" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1607250010739">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

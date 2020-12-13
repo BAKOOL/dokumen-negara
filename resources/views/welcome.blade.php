@@ -42,10 +42,11 @@
                 </div>
 
                 <div class="image">
-                    <img src="images/notebook.png" alt="notebook" width="200" height="200">
-                    <img src="images/pen.png" alt="notebook" width="200" height="200">
-                    <img src="images/rol.png" alt="notebook" width="200" height="200">
-                    <img src="images/dict.png" alt="notebook" width="200" height="200">
+                    <a href="#"><img src="images/notebook.png" alt="notebook" width="200" height="200"></a>
+                    <a href="#"><img src="images/pen.png" alt="notebook" width="200" height="200"></a>
+                    <a href="#"><img src="images/rol.png" alt="notebook" width="200" height="200"></a>
+                    <a href="#"><img src="images/dict.png" alt="notebook" width="200" height="200"></a>
+
                 </div>
             </div>
         </div>

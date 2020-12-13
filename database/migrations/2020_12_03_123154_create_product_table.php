@@ -16,9 +16,9 @@ class CreateProductTable extends Migration
         Schema::create('product', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->unsignedBigInteger('stationaryType_Id');
-            $table->foreign('stationaryType_Id')->references('stationaryType_Id')->on('type');
-//            $table->foreignId('stationaryType_Id')->constrained('stationaryType');
+//            $table->unsignedBigInteger('stationaryType_Id');
+//            $table->foreign('stationaryType_Id')->references('id')->on('stationaryType');
+            $table->foreignId('stationaryType_Id')->constrained('stationaryType');
             $table->string('stock');
             $table->string('price');
             $table->string('description');

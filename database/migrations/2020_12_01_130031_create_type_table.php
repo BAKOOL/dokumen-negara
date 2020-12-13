@@ -13,8 +13,8 @@ class CreateTypeTable extends Migration
      */
     public function up()
     {
-        Schema::create('type', function (Blueprint $table) {
-            $table->id('stationaryType_Id');
+        Schema::create('stationaryType', function (Blueprint $table) {
+            $table->id();
             $table->string('stationaryType_Name');
             $table->timestamps();
         });
@@ -27,6 +27,6 @@ class CreateTypeTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('type');
+        Schema::dropIfExists('stationaryType');
     }
 }

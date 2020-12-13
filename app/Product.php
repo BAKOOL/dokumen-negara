@@ -13,7 +13,7 @@ class Product extends Model
         return $this->belongsTo(StationaryType::class);
     }
 
-    protected $table = 'product';
+    public $table = 'product';
 
     protected $fillable = [
         'name', 'stationaryType_Id', 'stock', 'price', 'description', 'image',

@@ -16,19 +16,29 @@
             <a href="" class="btn btn-primary btn-space">Edit Stationary Type</a>
         </div>
     @endif
-    <div class="row justify-content-between">
-        @foreach($product as $prod)
-            <div class="col-sm-4">
-                <div class="card" style="width: 300px">
-                    <img src="{{asset($prod->image)}}" alt="" class="image" style="width: 100%">
-                    <div class="card-body">
-                        <a href="#" class="card-link">{{$prod->name}}</a>
-                        <p class="card-text">{{$prod->description}}</p>
+    <div class="container">
+        <div class="row">
+            @if($product->isNotEmpty())
+                @foreach($product as $prod)
+                    <div class="col-sm-4">
+                        <div class="card" style="width: 300px">
+                            <img src="{{asset($prod->image)}}" alt="" class="image" style="width: 100%">
+                            <div class="card-body">
+                                <a href="{{route('detailproduct', $prod->id)}}" class="card-link">{{$prod->name}}</a>
+                                <p class="card-text">{{$prod->description}}</p>
+                            </div>
+                        </div>
+                        <br>
                     </div>
-                </div>
-                <br>
+                @endforeach
+        </div>
+            @else
+            <div class="notfound">
+                There is no product match with the keyword.
             </div>
-        @endforeach
+        @endif
+
+
         <div class="paginate">
             {{$product->links()}}
         </div>

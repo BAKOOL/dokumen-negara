@@ -19,10 +19,15 @@ class ProductController extends Controller
     public function index(){
         $product = DB::table('product')->paginate(6);
 
-        return view('index',['product' => $product]);
+        return view('home',['product' => $product]);
     }
     public function product($id){
         $product = Product::find($id);
+        return view('/viewstationary', ['product' => $product]);
 
     }
+//    public function viewstationary($id){
+//        $product = Product::find($id);
+//        return view('viewstationary', ['product' => $product]);
+//    }
 }
