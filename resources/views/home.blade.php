@@ -8,24 +8,23 @@
         </div>
     @endif
 
-
-    @if(Auth::user()->is_admin == 1)
-        <div class="addNew">
-            <a href="" class="btn btn-primary btn-space">Add New Stationary</a>
-            <a href="" class="btn btn-primary btn-space">Add New Stationary Type</a>
-            <a href="" class="btn btn-primary btn-space">Edit Stationary Type</a>
-        </div>
-    @endif
     <div class="container">
+        @if(Auth::user()->is_admin == 1)
+            <div class="addNew">
+                <a href="#" class="btn btn-primary btn-space">Add New Stationary</a>
+                <a href="#" class="btn btn-primary btn-space">Add New Stationary Type</a>
+                <a href="#" class="btn btn-primary btn-space">Edit Stationary Type</a>
+            </div>
+        @endif
         <div class="row">
-            @if($product->isNotEmpty())
-                @foreach($product as $prod)
+            @if($stationary->isNotEmpty())
+                @foreach($stationary as $stat)
                     <div class="col-sm-4">
                         <div class="card" style="width: 300px">
-                            <img src="{{asset($prod->image)}}" alt="" class="image" style="width: 100%">
+                            <img src="{{asset($stat->image)}}" alt="" class="image" style="width: 100%">
                             <div class="card-body">
-                                <a href="{{route('detailproduct', $prod->id)}}" class="card-link">{{$prod->name}}</a>
-                                <p class="card-text">{{$prod->description}}</p>
+                                <a href="{{route('detailproduct', $stat->id)}}" class="card-link">{{$stat->name}}</a>
+                                <p class="card-text">{{$stat->description}}</p>
                             </div>
                         </div>
                         <br>
@@ -37,10 +36,8 @@
                 There is no product match with the keyword.
             </div>
         @endif
-
-
         <div class="paginate">
-            {{$product->links()}}
+            {{$stationary->links()}}
         </div>
     </div>
 

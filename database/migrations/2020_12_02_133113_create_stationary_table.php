@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateProductTable extends Migration
+class CreateStationaryTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,12 @@ class CreateProductTable extends Migration
      */
     public function up()
     {
-        Schema::create('product', function (Blueprint $table) {
+        Schema::create('stationary', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('type_id')->constrained('stationarytype');
             $table->string('name');
-//            $table->unsignedBigInteger('stationaryType_Id');
-//            $table->foreign('stationaryType_Id')->references('id')->on('stationaryType');
-            $table->foreignId('stationaryType_Id')->constrained('stationaryType');
-            $table->string('stock');
-            $table->string('price');
+            $table->integer('stock');
+            $table->integer('price');
             $table->string('description');
             $table->string('image');
             $table->timestamps();
@@ -34,6 +32,6 @@ class CreateProductTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('products');
+        Schema::dropIfExists('stationary');
     }
 }

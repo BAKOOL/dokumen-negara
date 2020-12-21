@@ -34,7 +34,7 @@
                     ReadandWArite
                 </div>
                 <div class="form-group">
-                    <form action="/product/search" method="GET">
+                    <form action="/stationary/search" method="GET">
                         <input type="text" name="search" class="form-control form-control-lg" placeholder="Search for stationary" id="usr">
                         <button type="submit" class="btn btn-primary" value="Search">Search</button>
                     </form>
@@ -42,11 +42,10 @@
                 </div>
 
                 <div class="image">
-                    <a href="#"><img src="images/notebook.png" alt="notebook" width="200" height="200"></a>
-                    <a href="#"><img src="images/pen.png" alt="notebook" width="200" height="200"></a>
-                    <a href="#"><img src="images/rol.png" alt="notebook" width="200" height="200"></a>
-                    <a href="#"><img src="images/dict.png" alt="notebook" width="200" height="200"></a>
-
+                    <a href="{{route('searchnotebook')}}"><img src="images/type/notebook.png" alt="notebook" width="200" height="200"></a>
+                    <a href="{{route('searchpen')}}"><img src="images/type/pen.png" alt="notebook" width="200" height="200"></a>
+                    <a href="{{route('searchruler')}}"><img src="images/type/rol.png" alt="notebook" width="200" height="200"></a>
+                    <a href="{{route('searchdict')}}"><img src="images/type/dict.png" alt="notebook" width="200" height="200"></a>
                 </div>
             </div>
         </div>

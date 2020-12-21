@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTypeTable extends Migration
+class CreateCartdetailTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,9 @@ class CreateTypeTable extends Migration
      */
     public function up()
     {
-        Schema::create('stationaryType', function (Blueprint $table) {
-            $table->id();
-            $table->string('stationaryType_Name');
+        Schema::create('cartdetail', function (Blueprint $table) {
+            $table->foreignId('cart_id')->constrained('cart');
+            $table->foreignId('type_id')->constrained('stationarytype');
             $table->timestamps();
         });
     }
@@ -27,6 +27,6 @@ class CreateTypeTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('stationaryType');
+        Schema::dropIfExists('cartdetail');
     }
 }

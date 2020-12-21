@@ -13,17 +13,46 @@ class TypeSeeder extends Seeder
     public function run()
     {
         //
-        DB::table('stationaryType')->insert([
-            ['stationaryType_Name' => 'pen'],
-            ['stationaryType_Name' => 'pencil'],
-            ['stationaryType_Name' => 'ruler'],
-            ['stationaryType_Name' => 'notebook'],
-            ['stationaryType_Name' => 'dictionary'],
-            ['stationaryType_Name' => 'smart pen'],
-            ['stationaryType_Name' => 'smart pencil'],
-            ['stationaryType_Name' => 'smart reader'],
-            ['stationaryType_Name' => 'smart note'],
-            ['stationaryType_Name' => 'eraser']
+        DB::table('stationarytype')->insert([
+            [
+                'type_name' => 'pen',
+                'type_image' => 'images/type/pen.png'
+            ],
+            [
+                'type_name' => 'pencil',
+                'type_image' => 'images/type/pencil-03.jpg'
+            ],
+            [
+                'type_name' => 'ruler',
+                'type_image' => 'images/type/rol.png'
+            ],
+            [
+                'type_name' => 'notebook',
+                'type_image' => 'images/type/notebook.png'
+            ],
+            [
+                'type_name' => 'dictionary',
+                'type_image' => 'images/type/dict.png'
+            ],
+            [
+                'type_name' => 'smart pen',
+                'type_image' => 'images/type/smart pen.jpg'
+            ],
+            [
+                'type_name' => 'smart pencil',
+                'type_image' => 'images/type/smart pencil.jpg'
+            ],
+            [
+                'type_name' => 'smart reader',
+                'type_image' => 'images/type/smart reader.jpg'
+            ],
+            [
+                'type_name' => 'smart note',
+                'type_image' => 'images/type/smart note.png'
+            ],
+            [
+                'type_name' => 'eraser',
+                'type_image' => 'images/type/eraser.jpg']
         ]);
     }
 }

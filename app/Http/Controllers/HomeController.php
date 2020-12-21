@@ -25,8 +25,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $product = DB::table('product')->paginate(6);
-        return view('home',['product' => $product]);
+        $stationary = DB::table('stationary')->paginate(6);
+        return view('home',['stationary' => $stationary]);
     }
 
 }

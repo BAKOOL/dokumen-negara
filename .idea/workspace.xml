@@ -20,17 +20,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f4a010f-e616-4013-a5f5-e4e793e23f26" name="Default Changelist" comment="adding new file">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/MemberController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/StationaryController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Stationary.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_14_135128_create_transaction_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_14_135219_create_transactiondetail_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_17_153735_create_cart_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_17_153750_create_cartdetail_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/product/dictionary.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/product/rulercircle.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Admin/addstationary.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Admin/addtype.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Admin/updatestationary.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Admin/updatetype.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Member/shoppingcart.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Member/transactionhistory.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Product.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/StationaryType.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/StationaryType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_01_130031_create_type_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_01_130031_create_type_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_03_123154_create_product_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_03_123154_create_product_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_01_130031_create_type_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_01_133044_create_stationarytype_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_03_123154_create_product_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_02_133113_create_stationary_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/ProductSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/ProductSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeds/TypeSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/TypeSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/homesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/homesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/dict.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/type/dict.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/notebook.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/type/notebook.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/pen.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/type/pen.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/rol.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/type/rol.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/viewstationary.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/viewstationary.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
@@ -178,7 +200,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../UTS_FIX" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../readandwarite2" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -190,7 +212,13 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\SEMESTER 5\Web Programming\Project\public\images\product" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\SEMESTER 5\Web Programming\Project\resources\views\Member" />
+      <recent name="D:\SEMESTER 5\Web Programming\Project\resources\views\Admin" />
+      <recent name="D:\SEMESTER 5\Web Programming\Project\public\images\type" />
       <recent name="D:\SEMESTER 5\Web Programming\Project\public\images" />
     </key>
   </component>
@@ -231,7 +259,15 @@
       <workItem from="1607493762828" duration="10901000" />
       <workItem from="1607517883348" duration="11574000" />
       <workItem from="1607831788359" duration="15912000" />
-      <workItem from="1607866314890" duration="2501000" />
+      <workItem from="1607866314890" duration="2633000" />
+      <workItem from="1607927386035" duration="10681000" />
+      <workItem from="1607948349405" duration="14540000" />
+      <workItem from="1608017380814" duration="2294000" />
+      <workItem from="1608215134311" duration="5093000" />
+      <workItem from="1608295424667" duration="8853000" />
+      <workItem from="1608353816127" duration="4639000" />
+      <workItem from="1608450568169" duration="20499000" />
+      <workItem from="1608552929654" duration="1125000" />
     </task>
     <task id="LOCAL-00001" summary="adding new file">
       <created>1607257640749</created>
@@ -296,7 +332,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607531060691</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="adding new file">
+      <created>1607868884622</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1607868884622</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -332,14 +375,14 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="449" y="153" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.834@0.0.1536.834" timestamp="1605789067436" />
-    <state x="499" y="172" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1607526108996">
+    <state x="499" y="172" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1608299355773">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="499" y="172" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.834@0.0.1536.834" timestamp="1607526108996" />
-    <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1606916947094">
+    <state x="499" y="172" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.834@0.0.1536.834" timestamp="1608299355773" />
+    <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1608553089418">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1606916947094" />
+    <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1608553089418" />
     <state width="1493" height="213" key="GridCell.Tab.0.bottom" timestamp="1607508640268">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -356,14 +399,14 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1493" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1607508640268" />
-    <state x="604" y="341" key="NewPhpFileDialog" timestamp="1607527333386">
+    <state x="604" y="341" key="NewPhpFileDialog" timestamp="1608480107191">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="604" y="341" key="NewPhpFileDialog/0.0.1536.834@0.0.1536.834" timestamp="1607527333386" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1607531063940">
+    <state x="604" y="341" key="NewPhpFileDialog/0.0.1536.834@0.0.1536.834" timestamp="1608480107191" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1607868891452">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1607531063940" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1607868891452" />
     <state x="93" y="93" width="1350" height="648" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1607250010739">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -376,9 +419,9 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="586" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1607172843830" />
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1605790261527">
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1608478402448">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1605790261527" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1608478402448" />
   </component>
 </project>

@@ -3,14 +3,14 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use App\Product;
+
 
 class StationaryType extends Model
 {
     //
-    public function Product(){
-        return $this->hasMany(Product::class, 'stationaryType_Id');
+    public function stationary(){
+        return $this->hasMany('App\Stationary');
     }
-    public $table = 'stationaryType';
+    public $table = 'stationarytype';
 
 }
